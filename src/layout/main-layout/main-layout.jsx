@@ -52,6 +52,14 @@ export const MainLayout = () => {
             Models
           </NavLink>
           <NavLink 
+            to={"/location"} 
+            className={({ isActive }) => 
+              isActive ? "bg-bgactive w-[100%] py-3 flex items-center justify-center" : ""
+            }
+          >
+            Location
+          </NavLink>
+          <NavLink 
             to={"/login"} 
             className={({ isActive }) => 
               isActive ? "bg-bgactive w-[100%] py-3 flex items-center justify-center" : ""

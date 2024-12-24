@@ -17,11 +17,10 @@ export const Brands = () => {
     setIsModalOpen(!isModalOpen);  
   };
   const handleClick = () => {
-    navigate('/brands-form'); // "/brands-form" sahifasiga yo'naltirish
+    navigate('/brands-form'); 
 };
  
-///brands-form
-//add information
+
   return (
     <div>
       {isLoading ? (

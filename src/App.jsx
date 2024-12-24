@@ -8,7 +8,8 @@ import { CategoryEdit } from "./components/category-edit";
 import { CategoryForm } from "./components/ctegory-form/category-form";
 import { BrandsForm } from "./components/brands-form";
 import { Models } from "./pages/models";
-import { ModelsForm } from "./components/models-form";
+import { ModelsForm } from "./components/models-component/models-form";
+import { Location } from "./pages/location";
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <Route path="brands" element={<Brands/>} />
           <Route path="cars" element={<Cars/>}/>
           <Route path="models" element={<Models/>}/>
+          <Route path="location" element={<Location/>}/>
           <Route path="category-edit/:id" element={<CategoryEdit/>} />
           <Route path="category-form" element={<CategoryForm/>} />
           <Route path="brands-form" element={<BrandsForm/>} />
